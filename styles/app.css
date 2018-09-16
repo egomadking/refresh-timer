@@ -8,6 +8,21 @@ button {
   border-radius: 5px;
 }
 
+button.disabled {
+  border-color: #eee;
+  color: #ccc;
+  background-color: eee;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+fieldset.disabled {
+  display: none;
+}
+
 main {
   display: flex;
   flex-direction: column;

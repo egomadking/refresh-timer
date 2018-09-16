@@ -21,14 +21,14 @@
         <fieldset>
           <legend>Set a time for page refresh interval</legend>
           <label for="set-minutes">Minutes:</label>
-          <input id="set-minutes" type="number" min="0" max="59" value="0">
+          <input id="set-minutes" type="number" min="0" max="59" value="3">
           <label for="set-seconds">Seconds:</label>
           <input id="set-seconds" type="number" min="0" max="59" value="2">
-          <div id="submit">
-            <button type="button" onclick="startTimer()">Start timer</button>
-            <button type="button" onclick="cancelTimer()">Cancel</button>
-          </div>
         </fieldset>
+          <div id="submit">
+            <button type="button" id="start" onclick="startTimer()">Start timer</button>
+            <button type="button" id="cancel" onclick="cancelTimer()" >Cancel</button>
+          </div>
       </form>
       </form>
     </div>
